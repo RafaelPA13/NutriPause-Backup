@@ -1,0 +1,775 @@
+@import url('https://fonts.googleapis.com/css2?family=Donegal+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.CentroX {
+  min-height: 100%;
+  background-color: #ebe5ce;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.CentroXY {
+  height: 100vh;
+  background-color: #ebe5ce;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Centralizado{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.Centralizado h1{
+  font-family: 'Donegal One', sans-serif;
+  font-size: 40px;
+  color: #8D1042;
+}
+
+.Centralizado p{
+  text-align: center;
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 20px;
+  padding: 0px 60px;
+}
+
+.CentroX main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin: 30px 0px;
+}
+
+.Main-Com-Menu{
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 70px;
+  background-color: #ebe5ce;
+  padding: 15px;
+}
+
+.Main-Com-Menu svg{
+  width: 100px;
+  height: 100px;
+  color: #8d1042;
+}
+
+.Main-Com-Menu h1{
+  font-family: 'Donegal One', sans-serif;
+  color: #8D1042;
+}
+
+.Header-Input{
+  background-color: #640f3d;
+  padding: 15px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+  z-index: 100;
+}
+
+.Header-Input input{
+  width: 100%;
+  padding: 15px;
+  border-radius: 15px;
+  border: none;
+  font-size: 20px;
+}
+
+.Header-Input button{
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  border: none;
+  background-color: #8d1042;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Header-Input button svg{
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+}
+
+.checkbox{
+  background-color: #8d1042;
+  list-style: none;
+  padding: 20px 15px 15px 15px;
+  border-radius: 0px 0px 15px 15px; 
+  position: relative;
+  top: -15px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.checkbox label{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-weight: 600;
+  font-size: 13px;
+  font-family: 'Didact Gothic', sans-serif;
+  color: #fff;
+  accent-color: #640F3D;
+}
+
+.ListaDeCards{
+  list-style: none;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Card{
+  width: 75%;
+}
+
+.Header-Card{
+  width: 100%;
+  height: 75px;
+  border: 3px solid #640f3d;
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+}
+
+.Header-Card button{
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #640f3d;
+  background-color: #640f3d;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  z-index: 1;
+}
+
+.Header-Card button svg{
+  width: 20px;
+  height: 20px;
+  color: #fff;
+}
+
+.Card-Body{
+  width: 100%;
+  background-color: #640f3d;
+  padding: 15px;
+  position: relative;
+  top: -12px;
+  border-radius: 0px 0px 20px 20px;
+  font-family: 'Didact Gothic', sans-serif;
+  color: #fff;
+  visibility: hidden;
+  height: 0px;
+  transition: .6s;
+  overflow-y: hidden;
+}
+
+.Card-Body.aberto{
+  visibility: visible;
+  height: 15vh;
+  overflow-y: auto;
+}
+
+.ListaDeReceitas{
+  padding: 0px 30px;
+  list-style: disc;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.titulos-pagamentos{
+  color: #640f3d;
+  font-size: 35px;
+  align-self: flex-start;
+  padding: 0px 15px;
+}
+
+.subtitulos-pagamentos{
+  color: #8d1042;
+  font-size: 20px;
+  align-self: flex-start;
+  padding: 0px 15px;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+.CentroXY main svg{
+  width: 70px;
+  height: 70px;
+  color: #8d1042;
+}
+
+.btn{
+  padding: 10px 40px;
+  border-radius: 10px;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  background-color: #640F3D;
+  color: #fff;
+  font-weight: 1000;
+  z-index: 100;
+  text-decoration: none;
+}
+
+.bolinhas{
+  width: 100%;
+  padding: 0px 10px;
+  position: absolute;
+  top: 250px;
+}
+
+.bolota{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+.bolota2{
+  transform: rotate(180deg);
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.logo {
+  margin-bottom: 10px;
+}
+
+.bloco {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 50px;
+  height: 50%;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.bloco h1 {
+  font-family: sans-serif;
+  color: #8d1042;
+  font-size: 25px;
+  text-align: center;
+}
+
+.bloco h2 {
+  font-family: sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.bloco a {
+  font-family: "Italic", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: #640f3d;
+}
+
+.bloco p {
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.titulo {
+  position: absolute;
+  top: 20px;
+  background-color: #640f3d;
+  color: #fff;
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 50px;
+  font-family: sans-serif;
+}
+
+.bloco-login-cadastro {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 50px;
+  color: #640f3d;
+  height: 50%;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.bloco-login-cadastro img {
+  width: 35%;
+}
+
+.label {
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+  font-family: "Inter", sans-serif;
+  align-self: flex-start;
+}
+
+.caixa-texto {
+  border-radius: 20px;
+  background-color: #ebe5ce;
+  width: 100%;
+  height: 25px;
+  resize: none;
+  border: none;
+  padding: 5px;
+}
+
+.bloco-login-cadastro a{
+  font-family: "Italic", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  color: #640f3d;
+}
+
+.bloco-login-cadastro button{
+  border-radius: 25px;
+  background-color: #640F3D;
+  color: #fff;
+  font-size: 15px;
+  width: 95px;
+  height: 30PX;
+  font-family: 'Inter', sans-serif;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bloco-cadastro-profissional{
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 50px;
+  color: #640f3d;
+  height: 75%;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.bloco-cadastro-profissional img{
+  width: 35%;
+}
+
+.bloco-cadastro-profissional button{
+  border-radius: 25px;
+  background-color: #640F3D;
+  color: #fff;
+  font-size: 15px;
+  width: 95px;
+  height: 30PX;
+  font-family: 'Inter', sans-serif;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.caixa-file{
+  border-radius: 20px;
+  background-color: #ebe5ce;
+  width: 100%;
+  height: 30px;
+  resize: none;
+  border: none;
+  padding: 5px;
+}
+
+.banner{
+  max-width: 100%;
+  padding: 30px 15px 0px 15px;
+  background-color: #8D1042;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.banner h1{
+  color: #EBE5CE;
+  font-family: 'Donegal One', sans-serif;
+}
+
+.banner p{
+  font-size: 20px;
+  color: #fff;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+.btn-banner{
+  position: absolute;
+  top: 230px;
+  padding: 10px 40px;
+  border-radius: 10px;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+  background-color: #640F3D;
+  color: #fff;
+  font-weight: 1000;
+}
+
+.beneficios{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  list-style: none;
+}
+
+.beneficios li{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0px 30px;
+}
+
+.icone-beneficios{
+  border: 2px solid #8D1042;
+  padding: 15px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icone-beneficios svg{
+  color: #8D1042;
+  width: 50px;
+  height: 50px;
+}
+
+.beneficios p{
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  text-align: left;
+  color: #8D1042;
+}
+
+.titulos-principais{
+  text-align: center;
+  font-family: 'Donegal One', sans-serif;
+  color: #640F3D;
+}
+
+.tutorial{
+  padding: 0px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+}
+
+.tutorial li{
+  text-align: center;
+}
+
+.tutorial li svg{
+  width: 200px;
+  height: 200px;
+  color: #640F3D;
+}
+
+.tutorial li h2{
+  margin-bottom: 15px;
+  font-family: 'Donegal One', sans-serif;
+  font-size: 30px;
+  color: #640F3D;
+}
+
+.tutorial li p{
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 25px;
+}
+
+.avaliacoes{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avaliacoes li{
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  background-color: #640F3D;
+  border-radius: 15px;
+  width: 301px;
+  height: 194px;
+  margin-bottom: 30px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.avaliacoes p{
+  text-align: center;
+  color: #fff;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+.avaliacoes h3{
+  text-align: center;
+  font-family: 'Donegal One', sans-serif;
+  font-size: 25px;
+  color: #fff;
+}
+
+.header-menu{
+  box-sizing: border-box;
+  height: 70px;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  position: absolute;
+  top: 30px;
+}
+
+#btn-menu{
+  display: flex;
+  padding: .5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  gap: .5rem;
+}
+
+.hamburguer{
+  border-top: 2px solid;
+  width: 20px;
+  color: #640f3d;
+}
+
+.hamburguer::after, .hamburguer::before{
+  content: '';
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: currentColor;
+  margin-top: 5px;
+  transition: .3s;
+  position: relative;
+}
+
+#nav.aberto .hamburguer{
+  border-top-color: transparent;
+}
+
+#nav.aberto .hamburguer::before{
+  transform: rotate(45deg);
+}
+
+#nav.aberto .hamburguer::after{
+  transform: rotate(-45deg);
+  top: -7px;
+}
+
+.menu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15px;
+  gap: 15px;
+  position: absolute;
+  width: 100%;
+  top: 70px;
+  right: 0px;
+  background-color: #640F3D;
+  transition: .6s;
+  z-index: 1000;
+  height: 0px;
+  visibility: hidden;
+  overflow-y: hidden;
+}
+
+#nav.aberto .menu{
+  height: calc(320px - 70px);
+  visibility: visible;
+  overflow-y: auto;
+}
+
+.menu li{
+  width: 90%;
+  background-color: #ff8aad42;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu li svg{
+  width: 25px;
+  height: 30px;
+  color: #fff;
+}
+
+.menu a{
+  padding: 1rem 0;
+  margin: 0 1rem;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+.Avisos{
+  text-align: center;
+}
+
+.Avisos h1{
+  text-align: center;
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 50px;
+  margin-bottom: 15px;
+  color: #8D1042;
+}
+
+.Avisos a{
+  padding: 10px 40px;
+  background-color: #640F3D;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 10px;
+  font-family: 'Donegal One', sans-serif;
+}
+
+.carregando{
+  width: 80px;
+  height: 80px;
+  border: 20px solid #ccc7b2;
+  border-top-color: #8d1042;
+  border-radius: 50%;
+  animation: rodar 1s linear infinite;
+}
+
+@keyframes rodar{
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+.barra-topo{
+  width: 100%;
+  padding: 15px 0px;
+  background:#8d1042;
+  position: absolute;
+  top: 0px;
+}
+
+.biografia{
+  width: 90%;
+  border-radius: 15px;
+  border: 2px solid #8d1042;
+}
+
+.bloco-pagamento{
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 50px;
+  color: #640f3d;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.bloco-pagamento .total{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bloco-pagamento .total p{
+  color: #000;
+  font-size: 25px;
+  font-family: 'Donegal One', sans-serif;
+}
+
+.radio-group{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.radio-group li{
+  background-color: #ebe5ce;
+  border: 2px solid #640F3D;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 5px;
+}
+
+.radio-group input{
+  accent-color: #640F3D;
+}
+
+.radio-group div{
+  display: flex;
+  gap: 5px;
+}
+
+.radio-group h1{
+  font-family: 'Donegal One', sans-serif;
+  font-size: 20px;
+}
+
+.radio-group img{
+  padding: 0px 10px;
+}
