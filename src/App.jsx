@@ -11,6 +11,8 @@ import PlanoConsulta from './Pages/PlanoConsulta'
 import Pagamento from './Pages/Pagamento'
 import HomePaciente from './PacientePages/HomePaciente'
 import PerfilPaciente from './ProfissionalPages/PerfilPaciente'
+import Pedidos from './ProfissionalPages/Pedidos'
+import Clientes from './ProfissionalPages/Clientes'
 
 function App(){
   return(
@@ -29,6 +31,8 @@ function App(){
           <Route path='/pagamento' element={<Pagamento/>}/>
           <Route path='/homepaciente' element={<HomePaciente/>}/>
           <Route path='/perfilpaciente' element={<PerfilPaciente/>}/>
+          <Route path='/pedidos' element={<Pedidos/>}/>
+          <Route path='/clientes' element={<Clientes/>}/>
         </Routes>
       </BrowserRouter>
     </div>

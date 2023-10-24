@@ -17,15 +17,15 @@ function MenuProfissional() {
             </button>
             <ul className="menu">
                 <li>
-                    <a href="">Pedidos</a>
+                    <a href="homeprofissionais">Home</a>
                     <RiArrowRightSLine/>
                 </li>
                 <li>
-                    <a href="">Pendentes</a>
+                    <a href="/pedidos">Pedidos</a>
                     <RiArrowRightSLine/>
                 </li>
                 <li>
-                    <a href="">Clientes</a>
+                    <a href="/clientes">Clientes</a>
                     <RiArrowRightSLine/>
                 </li>
             </ul>
