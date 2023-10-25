@@ -55,7 +55,7 @@
 
 .Main-Com-Menu{
   width: 100%;
-  min-height: 100%;
+  min-height: calc(100% - 100px);
   position: absolute;
   top: 70px;
   background-color: #ebe5ce;
@@ -175,6 +175,36 @@
   font-family: 'Donegal One', sans-serif;
 }
 
+.bloco-pedidos div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.bloco-pedidos div a{
+  color: #8D1042;
+  font-family: 'Didact Gothic', sans-serif;
+  text-decoration: none;
+}
+
+.bloco-pedidos div button{
+  border: none;
+  border-radius: 5px;
+  background-color: #8d1042;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.bloco-pedidos div button svg{
+  width: 15px;
+  height: 15px;
+  color: #fff;
+}
+
 .Card{
   width: 75%;
 }
@@ -279,6 +309,7 @@
   padding: 0px 10px;
   position: absolute;
   top: 250px;
+  z-index: 1;
 }
 
 .bolota{
@@ -292,6 +323,20 @@
   position: absolute;
   top: 0px;
   right: 0px;
+}
+
+.Sobre-Nos-H1{
+  font-family: 'Donegal One', sans-serif;
+  color: #640F3D;
+}
+
+.Sobre-Nos-P{
+  position: relative;
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  padding: 0px 40px;
+  z-index: 2;
 }
 
 .logo {
@@ -353,7 +398,7 @@
   padding: 15px;
   border-radius: 50px;
   color: #640f3d;
-  height: 50%;
+  height: 55%;
   width: 75%;
   display: flex;
   flex-direction: column;

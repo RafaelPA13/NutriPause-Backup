@@ -13,6 +13,7 @@ function CadastroPaciente() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const [telefone, setTelefone] = useState("");
 
   const [createUserWithEmailAndPassword, user, loading, error] =
     useCreateUserWithEmailAndPassword(auth);
@@ -30,7 +31,9 @@ function CadastroPaciente() {
     await addDoc(collection(db, "Pacientes"), {
       Nome: nome,
       Email: email,
-      Senha: password
+      Senha: password,
+      Telefone: telefone,
+      Aceito: false
     })
 
     createUserWithEmailAndPassword(email, password);
@@ -39,6 +42,7 @@ function CadastroPaciente() {
     setEmail("")
     setPassword("")
     setConfirmPassword("")
+    setTelefone("")
   };
 
   if (user) {
@@ -71,8 +75,11 @@ function CadastroPaciente() {
         <p className="label">Confirme senha:</p>
         <input className="caixa-texto" type="password" value={confirmPassword} onChange={(e) => {setConfirmPassword(e.target.value)}}/>
 
+        <p className="label">Telefone</p>
+        <input className="caixa-texto" type="text" value={telefone} onChange={(e) => {setTelefone(e.target.value)}}/>
+
         <a href="/loginpaciente">Já sou cadastrada</a>
-        <button onClick={Cadastrar}>Cadastrar</button>
+        <button className="btn"  onClick={Cadastrar}>Cadastrar</button>
       </main>
     </body>
   );

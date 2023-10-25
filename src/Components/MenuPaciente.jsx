@@ -17,11 +17,11 @@ function MenuPaciente() {
             </button>
             <ul className="menu">
                 <li>
-                    <a href="">Home</a>
+                    <a href="/homepaciente">Home</a>
                     <RiArrowRightSLine/>
                 </li>
                 <li>
-                    <a href="">Quem Somos</a>
+                    <a href="/sobrenos">Quem Somos</a>
                     <RiArrowRightSLine/>
                 </li>
                 <li>

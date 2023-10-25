@@ -13,10 +13,11 @@ import HomePaciente from './PacientePages/HomePaciente'
 import PerfilPaciente from './ProfissionalPages/PerfilPaciente'
 import Pedidos from './ProfissionalPages/Pedidos'
 import Clientes from './ProfissionalPages/Clientes'
+import SobreNos from './Pages/SobreNos'
 
 function App(){
   return(
-    <div>
+    <>
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<PagInicial/>}/>
@@ -33,9 +34,10 @@ function App(){
           <Route path='/perfilpaciente' element={<PerfilPaciente/>}/>
           <Route path='/pedidos' element={<Pedidos/>}/>
           <Route path='/clientes' element={<Clientes/>}/>
+          <Route path='/sobrenos' element={<SobreNos/>}/>
         </Routes>
       </BrowserRouter>
-    </div>
+    </>
   )
 }
 export default App
