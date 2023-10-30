@@ -14,6 +14,7 @@ import PerfilPaciente from './ProfissionalPages/PerfilPaciente'
 import Pedidos from './ProfissionalPages/Pedidos'
 import Clientes from './ProfissionalPages/Clientes'
 import SobreNos from './Pages/SobreNos'
+import PerfilMedico from './PacientePages/PerfilMedico'
 
 function App(){
   return(
@@ -35,6 +36,7 @@ function App(){
           <Route path='/pedidos' element={<Pedidos/>}/>
           <Route path='/clientes' element={<Clientes/>}/>
           <Route path='/sobrenos' element={<SobreNos/>}/>
+          <Route path='/perfilmedico' element={<PerfilMedico/>}/>
         </Routes>
       </BrowserRouter>
     </>

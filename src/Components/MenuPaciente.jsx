@@ -25,7 +25,7 @@ function MenuPaciente() {
                     <RiArrowRightSLine/>
                 </li>
                 <li>
-                    <a href="">Perfil Médico</a>
+                    <a href="/perfilmedico">Perfil Médico</a>
                     <RiArrowRightSLine/>
                 </li>
             </ul>
