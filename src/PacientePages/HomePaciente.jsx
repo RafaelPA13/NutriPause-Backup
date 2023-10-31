@@ -5,6 +5,8 @@ import Almoco from '../assets/Almoco.png'
 import Lanches from '../assets/Lanches.png'
 import Janta from '../assets/Janta.png'
 
+import { CgProfile } from 'react-icons/cg'
+
 function HomePaciente() {
   return (
     <body className="CentroX">
@@ -12,7 +14,8 @@ function HomePaciente() {
       <MenuPaciente />
       <main className="Main-Com-Menu">
         <div>
-          <h1>calendário</h1>
+        <CgProfile/>
+          <h1>Nome</h1>
         </div>
         <ul className="ListaDeCards">
           <ItemCard title={"Café da Manhã"} img={CafeDaManha} />
